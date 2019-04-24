@@ -8,15 +8,16 @@ import { LoginService } from './services/login.service';
 })
 export class AppComponent {
   title = 'Angular-Interceptor';
-  constructor(public loginService: LoginService) {
-    this.loginService.login({}).subscribe(data => {
-      console.log(data);
-    });
-  }
+  // constructor(public loginService: LoginService) {
+  //   this.loginService.login({}).subscribe(data => {
+  //     console.log(data);
+  //   });
+  // }
+  static API_URL="http://localhost:8080";
 
-  getCustomerDetails() {
-    this.loginService.getCustomerDetails().subscribe((data) => {
-      console.log('----->>>', data);
-    });
-  }
+  // getCustomerDetails() {
+  //   this.loginService.getCustomerDetails().subscribe((data) => {
+  //     console.log('----->>>', data);
+  //   });
+  // }
 }
